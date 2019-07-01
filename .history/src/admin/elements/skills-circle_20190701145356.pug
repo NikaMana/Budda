@@ -1,0 +1,6 @@
+mixin skills-circle(item)
+  svg(viewBox="0 0 140 140")
+    circle.circle--internal(cx="70" cy="70" r="60")
+    - var dashLength = 377
+    - var dashOffset = (100-item.val)*dashLength/100
+    circle.circle--external(cx="70" cy="70" r="60" stroke="url(#gradient)" )

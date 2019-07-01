@@ -1,0 +1,15 @@
+section.contacts
+  h3 Связаться со мной
+  form.contacts__form(action="/")
+    .contacts__inputs
+      label
+        div.contacts__label.text Введите ваше имя
+        input.contacts__input.contacts__input--name(placeholder="Маникина Вероника", type="text")
+      label
+        div.contacts__label.text Введите ваш email
+        input.contacts__input.cpntacts__input--email(placeholder="loftschool@study.com", type="text")
+    .contacts__textarea
+      label
+        div.contacts__label.text Сooбщение к письму
+        textarea(placeholder="Требуется ваша помощь в создании сайта.\n Интересуют сроки и цена вопроса")
+    button.contacts__submit Отправить

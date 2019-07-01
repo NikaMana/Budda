@@ -1,0 +1,115 @@
+.contacts__form{
+  margin-top: 90px;
+  max-width: 870px;
+  width: 100%;
+
+  .contacts__inputs{
+    display: flex;
+    justify-content: space-between;
+
+    label{
+      width: 46%;
+      margin-top: 40px;
+    }
+
+    @include phones(){
+      flex-direction: column;
+
+      label{
+        width: 100%;
+      }
+    }
+  }
+
+  .contacts__textarea{
+    margin-top: 40px;
+
+    textarea{
+      background-image: svg-load('message.svg', fill=$icon-color, width=26px, height=auto);
+      background-repeat: no-repeat;
+      background-position: 0 20px;
+      height: 80px;
+      line-height: 28px;
+
+      &:hover, &:focus{
+        background-image: svg-load('message.svg', fill=$main-color, width=26px, height=auto)
+
+      }
+    }
+  }
+
+  .contacts__input, textarea{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $dark-color;
+    outline: none;
+    padding: 10px 20px 20px 45px;
+    margin-top: 20px;
+    resize: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: $dark-color;
+    transition: 0.5s all;
+
+    &::placeholder{
+      font-weight: 600;
+      font-size: 16px;
+      color: $text-color;
+      opacity: 0.5;
+    }
+
+    &:hover, &:focus{
+      border-bottom: 2px solid $main-color;
+    }
+  }
+
+  .contacts__input{
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+
+    &--name{
+      background-image: svg-load('user.svg', fill=$icon-color, width=26px, height=auto);
+
+      &:hover, &focus{
+        background-image: svg-load('user.svg', fill=$main-color, weight=26px, height=auto);
+      }
+    }
+
+    &--email{background-image: svg-load('envelope.svg', fill=$icon-color, width=26px, height=auto);
+
+      &:hover, &focus{
+        background-image: svg-load('envelope.svg', fill=$main-color, weight=26px, height=auto);
+      }
+
+    }
+  }
+
+  label{
+    .contacts__label{
+      padding-left: 45px;
+    }
+  }
+
+  .contacts__submit{
+    background-image: $main-gradient;
+    border-radius: 40px 5px;
+    width: 347px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $light-color;
+    font-weight: 700;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    margin-top: 60px;
+
+    &:hover{
+      background-image: $main-gradient--hover;
+    }
+  }
+}

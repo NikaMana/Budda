@@ -1,0 +1,11 @@
+section.skills
+  .skills__title 
+    h4 Чем я могу быть полезна вам
+    .skills__desk.text Этот сайт я сделала в рамках обучения в школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут всё классно и красиво!
+  .skills__circles
+    .skills__circles-wrapper
+      include ../elements/skills-row
+      - var fronSkills = [{name: 'HTML5', val: 40}, ]
+      - var workflow = [{name: 'GIT', val: 60}, ]
+      +skills-row('Front-end', frontSkills)
+      +skills-row('Workflow', workflow)

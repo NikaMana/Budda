@@ -1,0 +1,10 @@
+section.comments
+  h4.comments__title.title Что обо мне говорят
+  .comments__slider-controls
+    button.comments__btn.comments__btn--prev(type='button')
+    button.comments__btn.comments__btn--next(type='button')
+  ul.comments__slider
+    - for (var i = 0; i < 2; i++)
+      li.comments__item
+        .text
+          p 

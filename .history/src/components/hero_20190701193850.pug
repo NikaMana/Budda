@@ -1,0 +1,13 @@
+section.hero
+  .container
+    .hero__face
+      .hero__photo
+        //img
+      .hero__data
+        table
+          - var data = [['Проживаю', 'Санкт-Петербург'], ['Возраст', '26 лет'], ['Родилась', '15 июня 1993']]
+          each row in data
+            tr
+              td #{row[0]}
+              td #{row}
+    .hero__content

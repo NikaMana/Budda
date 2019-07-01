@@ -1,0 +1,16 @@
+{
+  "text-color": "#414c63",
+  "light-color": "#fff",
+  "links-color": "#4b6fd7",
+  "dark-color": "#lf232d",
+  "icon-color": "#c5c9d1",
+  "main-color": "#5500f2",
+  "main-color--accent": "#ff9a00",
+  "text-color": "#9ba0ae",
+  "main-gradient": "linear-gradient(to right, #ad00ed 0%, #5500f2 100%)",
+  "main-gradient--hover": "linear-gradient(to right, #bb00ff 0%, #5900ff 100%)",
+  "bp-desktop-hd": "1800px",
+  "bp-desktop": "1200px",
+  "bp-tablets": "768px",
+  "bp-phones": "480px"  
+}
