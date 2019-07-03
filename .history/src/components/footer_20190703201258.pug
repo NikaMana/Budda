@@ -1,0 +1,22 @@
+footer.footer
+  .footer-container.container
+    .footer__name 
+      .footer__copyright 
+        .footer__copyright-year 2019
+        .footer__hero
+          h1.footer__hero-name Вероника Маникина
+          .footer__hero-desc Личный сайт веб-разработчика
+    .footer__info 
+      .footer__navigation
+        nav.footer-menu
+          ul.footer-menu__list
+            - var menu = ['Главная', 'Обо мне', 'Навыки', 'Работы', 'Отзывы', 'Связаться'];
+            each item in menu
+              li.footer-menu__item
+                a(href='').footer-menu__link #{item}
+      .footer__about
+        article.footer__text Этот сайт я сделала в рамках обучения в Школе онлайн образования Loftschool
+        .footer__socials
+          include socials
+          +socials('footer')
+      

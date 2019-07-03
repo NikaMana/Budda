@@ -1,0 +1,23 @@
+.triangles{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+
+.triangles__shape{
+    width: 50%;
+    fill: $light-color;
+    height: 100%;
+  }
+
+  &--upside{
+    top: -1px;
+    bottom: inherit;
+
+    .triangles__shape{
+      transform: rotate(180deg)
+    }
+  }
+}
