@@ -11,16 +11,15 @@ html(lang="en")
     .wrapper
       .maincontent 
         .welcome-wrapper
-          include components/screen
+          .welcome-container.container
             include components/header
             include components/welcome
-          include components/hero
+        include components/hero
         include elements/triangles
         +triangles('')
         
-        .wrapper-center
-          include components/skills
-          include components/works
+        include components/skills
+        include components/works
 
         .end-wrapper
           +triangles('upside')
