@@ -1,0 +1,19 @@
+script(type="text/x-template")#skills-list
+
+section.skills
+  .container.skills__use
+    .skills__wrapper
+      .skills__title 
+        .skills__title-container
+          h3.skills__title-use Чем я могу быть полезна вам
+          .skills__desk.text Этот сайт я сделала в рамках обучения в школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут всё классно и красиво!
+      .skills__circles
+        //- .skills__circles-wrapper
+        //-   include ../elements/skills-row
+        //-   - var frontSkills = [{name: 'HTML5', val: 40}, {name: 'CSS3', val: 55}, {name: 'JavaScript', val: 70}, {name: 'Vue.js', val: 90}]
+        //-   - var workflow = [{name: 'GIT', val: 60}, {name: 'Terminal', val: 80}, {name: 'Gulp', val: 37}, {name: 'Webpack', val: 64}]
+        //-   +skills-row('Front-end', frontSkills)
+        //-   +skills-row('Workflow', workflow)
+        .skills__circles-container
+          ul.skills-list
+            - for (var i = 0; i < 2; )

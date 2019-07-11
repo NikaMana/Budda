@@ -1,0 +1,9 @@
+mixin skills-row(rowName, skills)
+  h5.skills__circles-title #{rowName}
+
+   script()
+
+  .skills__circles-row
+    include skills-circle
+    each item in skills    
+      +skills-circle(item)

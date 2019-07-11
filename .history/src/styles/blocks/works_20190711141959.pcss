@@ -1,0 +1,119 @@
+.works{
+  margin-bottom: 6.8125rem;
+}
+.works, .container{
+  margin-top: 3.75rem;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include desktop() {
+    width: 60%;
+    padding-right:5rem;
+  }
+
+}
+.works, .container, .works__slider{
+  max-width: 58.9375rem;
+  position:relative;
+
+  @include desktop(){
+    padding-right: 5rem;
+  }
+}
+.works, .container, .works__description{
+  min-width: 16.5625rem;
+  width: 28%;
+  max-height: 25rem;
+  min-height: 15.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  @include tablets(){
+    width: 100%;
+    margin-top: 3.75rem;
+    align-items:center;
+    text-align:center;
+  }
+}
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 92.5rem;
+}
+.works__title{
+  margin-bottom: 5.75rem;
+}
+.works__slider{
+  display: flex;
+}
+.works__slider-img{
+  position:relative;
+  width: fit-content;
+  height:auto;
+  margin:0;
+}
+.works__slider-arrows{
+  display: flex;
+  justify-content: flex-end;
+
+  @include phones(){
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+  }
+  .works__slider-arrow{
+    transition: .2s all;
+    fill: $icon-color;
+  }
+}
+.works__description{
+  min-width: 265px;
+  width: 27%;
+  max-height: 400px;
+  min-height:250px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /*@include tablets(){
+    width: 100%;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+  } */
+    position: relative;
+    flex-basis: 25%;
+}
+.works__description-tags{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10%;
+}
+.works__description-title{
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+.works__descriptioninfo.text{
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(65,76,99,.7);
+  line-height: 1.875rem;
+}
+.works__description-link{
+  fill: #4b6fd7;
+  width: .9375rem;
+  height: .9375rem;
+  margin-right: 1.25rem;
+}
+.works__description-site{
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #4b6fd7;
+  border-bottom: 1px solid transparent;
+}

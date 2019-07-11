@@ -1,0 +1,8 @@
+mixin menu-mobile(mod, menuItems)
+  .menu-mobile
+    +icon('cross', 'menu-mobile__icon')
+    include menu
+    +menu(mod, menuItems)
+
+    include socials
+    +socials('light')
