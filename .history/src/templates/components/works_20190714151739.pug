@@ -1,0 +1,53 @@
+script(type="text/x-template")#slider-container
+  .works__slider
+    display(
+      :works="works"
+      :currentWork="currentWork"
+      @slide=""
+    )
+    info(
+      :currentWork="currentwork"
+    )
+
+script(type="text/x-template")#slider-display 
+  .works__slider-number #{selNumber}
+  .works__slider-img
+    //- +image('currentWork.photo')
+  arrows(
+    @slide="handleSlide"
+  )
+  thums(
+    :works="works"
+  )
+
+script(type="text/x-template")#slider-thums    
+  .works__slider-thums
+    - var thums = [4, 2, 3, 1]
+    each thum in thums
+      - var selClass = ''
+      if thum ===selNumber
+        - selClass = 'works__slider-thum--selected'
+      div(class='works__slider-thum'+selClass)
+        +image('content/slider-'+thum+'.jpg')
+
+script(type="text/x-template")#slider-arrows       
+  .works__slider-arrows
+    a(@click.prevent="$emit('slide', 'next')").works__slider-arrow.works__slider-arrow--next
+      +icon('arrow-down')
+    a(@click.prevent="$emit('slide', 'previous')").works__slider-arrow.works__slider-arrow--previous
+      +icon('arrow-down')
+
+script(type="text/x-template")#slider-info
+  .works__description
+    tags
+    h3.works__description-title {{currentWork.title}}
+    .works__descriptioninfo.text {{currentWork.desk}}
+    .works__description-link
+      +icon('link')
+      a(:href="currentWork.link").works__description-site Посмотреть сайт
+
+script(type="text/x-template")#slider-tags
+  .works__description-tags
+        - var tags = ['HTML', "CSS", 'JavaScript']
+        each tag in tags
+          .works__description-tag.text #{tag}
