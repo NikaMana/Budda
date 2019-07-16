@@ -20,16 +20,15 @@ script(type="text/x-template")#slider-display
       @slide="direction => $emit('slide', direction)"
     )
     thums(
-      :works="reversedWorks",
-      :currentWork="currentWork",
-      :currentIndex="currentIndex"
+      :works="reverseWorks",
+      :currentWork="currentWork"
     )
 
 script(type="text/x-template")#slider-thums    
   .works__slider-thums
-      //- - selClass = 'works__slider-thum--selected'
-      div.works__slider-thum(v-for="(thum, index) in works" :class="{ 'works__slider-thum--selected': index === currentIndex  }")
-        img(:src="thum.photo")
+        //- - selClass = 'works__slider-thum--selected'
+      div(class='works__slider-thum'+selClass)
+        +image('content/slider-'+thum+'.jpg')
 
 script(type="text/x-template")#slider-arrows       
   .works__slider-arrows

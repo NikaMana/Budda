@@ -1,7 +1,7 @@
 import Vue from 'vue';
 
 const arrows = {
-  template: "#slider-arrows"
+  template: "slider-arrows"
   // methods: {
   //   slide(direction) {
   //     this.$emit('slide', direction);
@@ -10,7 +10,7 @@ const arrows = {
 };
 
 const thums = {
-  template: "#slider-thums",
+  template: "slider-thums",
   props: {
     works: Array,
     currentWork: Object
@@ -19,7 +19,7 @@ const thums = {
 
 
 const display = {
-  template: "#slider-display",
+  template: "slider-display",
   props: {
     works: Array,
     currentWork: Object,
@@ -30,25 +30,25 @@ const display = {
       return [...this.works].reverse()
     }
   },
-  methods: {
-    // handleSlide(direction) {
-    //   this.$emit('slide', direction)
-    // }
-  },
+  // methods: {
+  //   handleSlide(direction) {
+  //     this.$emit('slide', direction)
+  //   }
+  // },
   components: {
     arrows, thums
   }
 }
 
 const tags = {
-  template: "#slider-tags",
+  template: "slider-tags",
   props: {
     tags: Array
   }
 };
 
 const info = {
-  template: "#slider-info",
+  template: "slider-info",
   props: {
     currentWork: Object,
   },
@@ -88,7 +88,7 @@ new Vue({
   methods: {
     makeArrWithRequiredImages(data) {
       return data.map(item => {
-        const requirePic = require(`images/content/${item.photo}`);
+        const requirePic = require('../images/content/${item.photo}');
         item.photo = requirePic;
         return item
       });

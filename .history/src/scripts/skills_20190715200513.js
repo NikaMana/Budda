@@ -8,7 +8,8 @@ const skillsCircle = {
   props: ['circle'],
   data() {
     return {
-      dashLength: 377
+      dashLength: 377,
+      dashOffset: 
     }
   },
   computed: {

@@ -28,7 +28,7 @@ script(type="text/x-template")#slider-display
 script(type="text/x-template")#slider-thums    
   .works__slider-thums
       //- - selClass = 'works__slider-thum--selected'
-      div.works__slider-thum(v-for="(thum, index) in works" :class="{ 'works__slider-thum--selected': index === currentIndex  }")
+      div.works__slider-thum(v-for="thum in works" :class="{ 'works__slider-thum--selected':  }")
         img(:src="thum.photo")
 
 script(type="text/x-template")#slider-arrows       

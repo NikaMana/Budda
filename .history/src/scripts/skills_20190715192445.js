@@ -8,20 +8,10 @@ const skillsCircle = {
   props: ['circle'],
   data() {
     return {
-      dashLength: 377
+      dashLength: 377,
+      dashOffset: (100-item.val)*dashLength/100
     }
-  },
-  computed: {
-    dashOffset() {
-      return (100-this.circle.val)*this.dashLength/100
-    },
-    externalStyle() {
-      return {
-        strokeDashoffset: this.dashOffset,
-        strokeDasharray: this.dashLength
-      }
-    }
-  },
+  }
   components: {
       // swiperSlide
   }

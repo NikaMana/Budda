@@ -20,6 +20,6 @@ script(type="text/x-template")#skills-row
 script(type="text/x-template")#skills-circle
   svg.skills-circle-item(viewBox="0 0 140 140")
     circle.circle--internal(cx="70" cy="70" r="60")
-    circle.circle--external(cx="70" cy="70" r="60" stroke="url(#gradient)" :stroke-dasharray="dashLength" :stroke-dashoffset="dashOffset" transform='rotate(180 70 70)')
+    circle.circle--external(cx="70" cy="70" r="60" stroke="url(#gradient)" :style="stroke-dashOffset:"+dashOffset+"; stroke-dasharray: "+dashLength+";" transform='rotate(180 70 70)')
     text(x="50%" y="50%" text-anchor="middle" class="skills__circles-text text" dy=".3em") {{ circle.name }}
     include ../../elements/svg-gradient

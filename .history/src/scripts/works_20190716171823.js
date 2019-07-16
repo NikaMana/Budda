@@ -31,9 +31,9 @@ const display = {
     }
   },
   methods: {
-    // handleSlide(direction) {
-    //   this.$emit('slide', direction)
-    // }
+    handleSlide(direction) {
+      this.$emit('slide', direction)
+    }
   },
   components: {
     arrows, thums

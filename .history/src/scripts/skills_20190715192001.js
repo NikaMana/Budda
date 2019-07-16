@@ -6,22 +6,6 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 const skillsCircle = {
   template: "#skills-circle",
   props: ['circle'],
-  data() {
-    return {
-      dashLength: 377
-    }
-  },
-  computed: {
-    dashOffset() {
-      return (100-this.circle.val)*this.dashLength/100
-    },
-    externalStyle() {
-      return {
-        strokeDashoffset: this.dashOffset,
-        strokeDasharray: this.dashLength
-      }
-    }
-  },
   components: {
       // swiperSlide
   }

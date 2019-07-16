@@ -7,29 +7,31 @@ script(type="text/x-template")#slider-container
       @slide="handleSlide"
     )
     info(
-      :currentWork="currentWork"
+      :currentWork="currentwork"
     )
 
 script(type="text/x-template")#slider-display 
   .works__slider-wrapper
-    .works__slider-number {{ currentIndex+1 }}
+    .works__slider-number {{ currentIndex }}
     .works__slider-img
-      img(:src="currentWork.photo")
       //- +image('currentWork.photo')
     arrows(
       @slide="direction => $emit('slide', direction)"
     )
     thums(
-      :works="reversedWorks",
-      :currentWork="currentWork",
-      :currentIndex="currentIndex"
+      :works="reverseWorks",
+      :currentWork="currentWork"
     )
 
 script(type="text/x-template")#slider-thums    
   .works__slider-thums
-      //- - selClass = 'works__slider-thum--selected'
-      div.works__slider-thum(v-for="(thum, index) in works" :class="{ 'works__slider-thum--selected': index === currentIndex  }")
-        img(:src="thum.photo")
+    - var thums = [4, 2, 3, 1]
+    each thum in thums
+      - var selClass = ''
+      if thum ===selNumber
+        - selClass = 'works__slider-thum--selected'
+      div(class='works__slider-thum'+selClass)
+        +image('content/slider-'+thum+'.jpg')
 
 script(type="text/x-template")#slider-arrows       
   .works__slider-arrows
@@ -51,4 +53,6 @@ script(type="text/x-template")#slider-info
 
 script(type="text/x-template")#slider-tags
   .works__description-tags
-    .works__description-tag.text(v-for="tag in tags") {{ tag }}
+        - var tags = ['HTML', "CSS", 'JavaScript']
+        each tag in tags
+          .works__description-tag.text #{tag}

@@ -30,11 +30,11 @@ const display = {
       return [...this.works].reverse()
     }
   },
-  methods: {
-    // handleSlide(direction) {
-    //   this.$emit('slide', direction)
-    // }
-  },
+  // methods: {
+  //   handleSlide(direction) {
+  //     this.$emit('slide', direction)
+  //   }
+  // },
   components: {
     arrows, thums
   }
