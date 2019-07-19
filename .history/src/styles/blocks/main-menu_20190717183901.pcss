@@ -1,0 +1,45 @@
+.main-menu{
+  flex: 1;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-menu__list{
+  display:inline-flex;
+  margin-top: 64px;
+}
+.main-menu .main-menu__list{
+  @include tablets(){
+    display: none;
+  }
+}
+.main-menu__link{
+  display: inline-block;
+  vertical-align: middle;
+  color: #414c63;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  border-bottom: 3px solid transparent;
+
+  @include 
+}
+
+.main-menu__link:after{
+    display: block;
+    content: attr(title);
+    font-weight: 700;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+.main-menu__item{
+  margin: 30px;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+}

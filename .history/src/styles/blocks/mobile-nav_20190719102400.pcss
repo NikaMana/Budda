@@ -1,0 +1,24 @@
+.mobile-nav{
+  display: none;
+  transition: width .4s;
+
+  @include tablets() {
+    display: inline-block;
+    position: fixed;
+    right: 5%;
+    top: 8%;
+    cursor: pointer;
+    width: 1.625rem;
+    z-index: 1000;
+  }
+  @include phones() {
+    top: 6%;
+  }
+}
+.mobile-nav__line{
+  border: 2px solid #414c63;
+  border-radius: 2px;
+  background-color: #414c63;
+  transition: .4s;
+  margin-bottom: .3125rem;
+}

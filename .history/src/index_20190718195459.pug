@@ -1,0 +1,36 @@
+include ./mixins.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Portfolio | main page
+  body
+    .wrapper
+      .maincontent 
+        .welcome-wrapper
+          include components/parallax
+          include components/screen
+            include components/header
+            include components/welcome
+          include components/hero
+        include elements/triangles
+        +triangles('')
+        
+        .wrapper-center
+          include components/skills
+          include components/works
+
+        .end-wrapper
+          +triangles('upside', 'triangles')
+          include components/comments
+          include components/contacts
+        include components/footer
+        
+    include ./templates/entry.pug
+
+        //- +image('content/user.jpg', 'user-pic')
+        //- +icon('link', 'link-class')
+        //- .icon-bg

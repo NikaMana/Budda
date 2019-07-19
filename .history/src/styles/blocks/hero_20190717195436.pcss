@@ -1,0 +1,164 @@
+.hero{
+  margin-bottom: 16.375rem;
+
+  @include desktop() {
+    margin-bottom: 14.375rem;
+  }
+
+  @include tablets() {
+    margin-bottom: 8.875rem;
+  }
+  @include phones() {
+    margin-bottom: 6.5625rem;
+  }
+}
+.hero__container{
+  display: flex;
+  justify-content: center;
+  padding: 0 10%;
+
+  @include desktop() {
+    padding: 0;
+  }
+
+  @include phones() {
+    flex-direction: column;
+  }
+}
+.hero__face, .hero__content{
+  width: 50%;
+}
+.hero__face{
+  flex: 0.95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop() {
+    flex: 0.6;
+    margin-right: 5.7%;
+  }
+  @include tablets() {
+    flex: 0.7;
+    align-items: flex-start;
+    padding-left: 1%;
+    margin-right: 4%;
+  }
+  @include phones() {
+    margin-bottom: 2.1875rem;
+  }
+}
+.hero__photo{
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 1.6875rem 0.125rem #414c63;
+  margin-bottom: 4.375rem;
+
+  @include desktop() {
+    margin-bottom: 4.3125rem;
+  }
+  @include tablets() {
+    width: 10.625rem;
+    height: 10.625rem;
+    margin-bottom: 2.9375rem;
+  }
+  @include phones() {
+    margin: 0 auto 1.1875rem;
+  }
+}
+.hero__img{
+  object-fit: cover;
+  border-style: none;
+}
+.hero__data{
+  width: 74%;
+
+  @include desktop() {
+    width: 100%;
+    font-size: .875rem;
+  }
+}
+.hero__info{
+  font-size: 1rem;
+  margin-left: 11%;
+  @include desktop(){
+    margin-left: 6%;
+  }
+}
+.hero__info-row{
+  height: 2.1875rem;
+
+  @include tablets() {
+    height: 1.8125rem;
+  }
+}
+.hero__info-question{
+  padding-right: 27%;
+  font-weight: 600;
+  color: rgba(65,76,99,.4);
+
+  @include desktop() {
+    padding-right: 29%;
+  }
+  @include tablets() {
+    padding-right: 11%;
+  }
+}
+.hero__info-answer{
+  font-weight: 600;
+  color: #414c63;
+}
+.hero__content{
+  flex: 1;
+  @include desktop() {
+    flex: 0.9;
+    margin-bottom: 14%;
+  }
+  @include tablets() {
+    margin-bottom: -1%;
+  }
+  @include phones() {
+    margin-bottom: 1.875rem;
+    font-size: 0.875rem;
+    width: 95%;
+  }
+}
+.hero__welcome{
+  margin-bottom: 16%;
+  font-weight: 600;
+  color: rgba(65,76,99,0.5);
+  margin-bottom: 1.4375rem;
+  @include desktop() {
+    margin-bottom: 1.1875rem;
+  }
+
+  @include tablets() {
+    margin-bottom: 0.6875rem;
+  }
+  @include phones() {
+    margin-bottom: 0.3875rem;
+  }
+}
+.hero__name{
+  margin-bottom: 5%;
+
+  @include tablets() {
+    margin-bottom: 11%;
+  }
+  @include phones() {
+    margin-bottom: 12%;
+  }
+}
+.hero__text-use{
+  font-weight: 600;
+  color: rgba(65,76,99,.5);
+  line-height: 1.875rem;
+}
+.hero__text-site{
+  line-height: 1.875rem;
+  color: rgba(65,76,99,.5);
+  font-style: italic;
+  font-weight: 600;
+}

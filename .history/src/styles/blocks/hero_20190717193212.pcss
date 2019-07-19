@@ -1,0 +1,111 @@
+.hero{
+  margin-bottom: 16.375rem;
+
+  @include desktop() {
+    margin-bottom: 14.375rem;
+  }
+
+  @include tablets() {
+    margin-bottom: 8.875rem;
+  }
+  @include phones() {
+    margin-bottom: 6.5625rem;
+  }
+}
+.hero__container{
+  display: flex;
+  justify-content: center;
+  padding: 0 10%;
+
+  @include desktop() {
+    padding: 0;
+  }
+
+  @include phones() {
+    flex-direction: column;
+  }
+}
+.hero__face, .hero__content{
+  width: 50%;
+}
+.hero__face{
+  flex: 0.95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop() {
+    flex: 0.6;
+    margin-right: 5.7%;
+  }
+  @include tablets() {
+    flex: 0.7;
+    align-items: flex-start;
+    padding-left: 1%;
+    margin-right: 4%;
+  }
+  @include phones() {
+    margin-bottom: 2.1875rem;
+  }
+}
+.hero__photo{
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 1.6875rem 0.125rem #414c63;
+  margin-bottom: 4.375rem;
+
+  @include desktop() {
+    margin-bottom: 4.3125rem;
+  }
+  @include tablets() {
+    
+  }
+}
+.hero__img{
+  object-fit: cover;
+  border-style: none;
+}
+.hero__data{
+  width: 74%;
+}
+.hero__info{
+  font-size: 1rem;
+  margin-left: 11%;
+}
+.hero__info-row{
+  height: 2.1875rem;
+}
+.hero__info-question{
+  padding-right: 27%;
+  font-weight: 600;
+  color: rgba(65,76,99,.4);
+}
+.hero__info-answer{
+  font-weight: 600;
+  color: #414c63;
+}
+.hero__content{
+  flex: 1;
+}
+.hero__welcome{
+  margin-bottom: 16%;
+  font-weight: 600;
+  color: rgba(65,76,99,.5);
+  margin-bottom: 1.4375rem;
+}
+.hero__name{
+  margin-bottom: 5%;
+}
+.hero__text-use{
+  font-weight: 600;
+  color: rgba(65,76,99,.5);
+  line-height: 1.875rem;
+}
+.hero__text-site{
+  line-height: 1.875rem;
+  color: rgba(65,76,99,.5);
+  font-style: italic;
+  font-weight: 600;
+}
