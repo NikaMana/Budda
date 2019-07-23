@@ -1,0 +1,133 @@
+html, body{
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.content-wrapper{
+  padding: 60px;
+  background: #f9fafe;
+  height: 100%;
+}
+.section-header {
+  display: flex;
+  margin-bottom: 60px;
+}
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container{
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1{
+  margin-right: 90px;
+}
+
+.input-wrapper{
+  position: relative;
+
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $light-color;
+    padding: 10px 0;
+
+    &::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $dark-color;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+  }
+}
+
+.button-add {
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: $light-color;
+  font-size: 30px;
+  border-radius: 50%;
+  /* background-image: $btn-gradient; */
+  cursor: pointer;
+
+  &:focus, &:hover {
+    outline: none;
+    background-image: $main-gradient--hover;
+  }
+}
+
+.skills-percent-icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  line-height: 36px;
+}
+
+.item-card--new {
+  /* background-image: $btn-gradient; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: $light-color;
+
+  button {
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 2px solid $light-color;
+    font-size: 72px;
+
+    &:hover, &:focus {
+      background: $light-color;
+      color: $links-color;
+    }
+  }
+}
+
+.item-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    flex: auto;
+  }
+}
+
+.item-card {
+  width: 30%;
+  height: 556px;
+  flex-shrink: 0;
+  margin: 0 10px 30px 10px;
+  box-shadow: 4px 3px 20px rgba(0, 0, 0, 0.07);
+  position: relative;
+}

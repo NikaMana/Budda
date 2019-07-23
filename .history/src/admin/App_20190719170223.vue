@@ -19,6 +19,6 @@ export default {
 </script>
 
 <style lang="postcss">
-  @import "../styles/blocks/admin.pcss"
+@import "../styles/blocks/admin"
 </style>
 
