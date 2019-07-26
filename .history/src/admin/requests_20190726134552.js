@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 
 const token = localStorage.getItem("token");
 
@@ -25,4 +25,4 @@ axios.interceptors.response.use(
   }
 );
 
-export default axios;
+// export default axios;
