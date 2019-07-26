@@ -1,0 +1,27 @@
+script(type="text/x-template")#skills-list
+  section.skills
+    .skills__use
+      .skills__wrapper
+        .skills__title           
+            h3.skills__title-use Чем я могу быть полезна вам
+        .skills__desk.text Этот сайт я сделала в рамках обучения в школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут всё классно и красиво!
+        .skills__circles
+          .skills__circles-wrapper
+            skills-row(v-for="row in skillRows" :item="row")
+            
+      
+script(type="text/x-template")#skills-row
+  ul.skills-row__list
+    li.skills-row__item
+      .skills-row-wrapper
+        h5.skills__circles-title {{ item.name }}
+        ul.skills__circles-row
+          skills-circle(v-for="skill in item.skills" :circle="skill")
+
+script(type="text/x-template")#skills-circle
+  li.skills__circles-list  
+    svg.skills-circle-item(viewBox="0 0 140 140")
+      circle.circle--internal(cx="70" cy="70" r="60")
+      circle.circle--external(cx="70" cy="70" r="60" stroke="url(#gradient)" :stroke-dasharray="dashLength" :stroke-dashoffset="dashOffset" transform='rotate(180 70 70)')
+      text(x="50%" y="50%" text-anchor="middle" class="skills__circles-text text" dy=".3em") {{ circle.name }}
+      include ../../elements/svg-gradient
