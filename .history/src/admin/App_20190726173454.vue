@@ -15,7 +15,7 @@
             a.nav-link Работы
           li.nav-item
             a.nav-link Отзывы
-//   section.works
+//   section.main-content
 //     .works__title Блок "Работы"
 //       form.works__form
 //         .form__header Редактирование работы
@@ -74,7 +74,7 @@
               править
               удалить
 
-//     section.comments
+//     section.main-content
 //       .comments__title Блок "Отзывы"
 //       form.comments__form
 //         .form__header Новый отзыв
@@ -102,42 +102,38 @@
               .comments__card-pic
 //             img(src="../../images/content/").comments__card-avatar
               .works__card-info
-                .comments__name Владимир Сабанцев
-                .comments__position.text Преподаватель
-              .works__card-desc Этот код выдержит любые испытания
-              buttons
-                button править
-                button удалить
-//         .comments__card 3
-              .comments__card-pic
-//             img(src="../../images/content/").comments__card-avatar
+                h5.works__card-title Сайт школы образования
+                .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              a(href="#").works__card-link http://loftschool.ru
+              править
+              удалить
+//         .works__card 3
+              .works__card-pic
+//             img(src="../../images/content/").works__card-avatar
               .works__card-info
-                .comments__name Владимир Сабанцев
-                .comments__position.text Преподаватель
-              .works__card-desc Этот код выдержит любые испытания
-              buttons
-                button править
-                button удалить
-//         .comments__card 4
-              .comments__card-pic
-//             img(src="../../images/content/").comments__card-avatar
+                h5.works__card-title Сайт школы образования
+                .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              a(href="#").works__card-link http://loftschool.ru
+              править
+              удалить
+//         .works__card 4
+              .works__card-pic
+//             img(src="../../images/content/").works__card-avatar
               .works__card-info
-                .comments__name Владимир Сабанцев
-                .comments__position.text Преподаватель
-              .works__card-desc Этот код выдержит любые испытания
-              buttons
-                button править
-                button удалить
-//         .comments__card 5
-              .comments__card-pic
-//             img(src="../../images/content/").comments__card-avatar
+                h5.works__card-title Сайт школы образования
+                .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              a(href="#").works__card-link http://loftschool.ru
+              править
+              удалить
+//         .works__card 5
+              .works__card-pic
+//             img(src="../../images/content/").works__card-avatar
               .works__card-info
-                .comments__name Владимир Сабанцев
-                .comments__position.text Преподаватель
-              .works__card-desc Этот код выдержит любые испытания
-              buttons
-                button править
-                button удалить
+                h5.works__card-title Сайт школы образования
+                .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              a(href="#").works__card-link http://loftschool.ru
+              править
+              удалить
       
     
 // </template>

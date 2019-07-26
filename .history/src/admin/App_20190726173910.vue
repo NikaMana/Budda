@@ -15,7 +15,7 @@
             a.nav-link Работы
           li.nav-item
             a.nav-link Отзывы
-//   section.works
+//   section.main-content
 //     .works__title Блок "Работы"
 //       form.works__form
 //         .form__header Редактирование работы
@@ -74,7 +74,7 @@
               править
               удалить
 
-//     section.comments
+//     section.main-content
 //       .comments__title Блок "Отзывы"
 //       form.comments__form
 //         .form__header Новый отзыв

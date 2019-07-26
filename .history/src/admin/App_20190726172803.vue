@@ -15,7 +15,7 @@
             a.nav-link Работы
           li.nav-item
             a.nav-link Отзывы
-//   section.works
+//   section.main-content
 //     .works__title Блок "Работы"
 //       form.works__form
 //         .form__header Редактирование работы
@@ -74,70 +74,64 @@
               править
               удалить
 
-//     section.comments
+//     section.main-content
 //       .comments__title Блок "Отзывы"
 //       form.comments__form
 //         .form__header Новый отзыв
 //         .form__body
 //          .form__photo-add
-              img.form__photo-avatar
-              button.form__photo-add-btn Добавить фото
+              img.
+              button.form__photo-add-btn Загрузить
 //           .form__data
 //             label.form-info
-//               .form__label-text Имя автора
-//               input(type="text" placeholder="Ковальчук Дмитрий")
+//               .form__label-text Название
+//               input(type="text" placeholder="Дизайн сайта")
 //             label.form-info
-//               .form__label-text Титул автора
-//               input(type="text" placeholder="Основатель")
+//               .form__label-text Ссылка
+//               input(type="text" placeholder="Ссылка")
 //             label.form-info
-//               .form__label-text Отзыв
-//               input(type="text" placeholder="Отзыв")
-              .form__buttons
-                button.form__btn-reset Удалить
-                button.form__btn-save Сохранить
-//       .comments__cards
-//         .comments__card 1
-              button.comments__card-btn Добавить отзыв
-//         .comments__card 2
-              .comments__card-pic
-//             img(src="../../images/content/").comments__card-avatar
+//               .form__label-text Описание
+//               input(type="text" placeholder="Описание")
+
+//       .works__cards
+//         .works__card 1
+              button.works__card-btn Добавить работу
+//         .works__card 2
+              .works__card-pic
+//             img(src="../../images/content/").works__card-avatar
               .works__card-info
-                .comments__name Владимир Сабанцев
-                .comments__position.text Преподаватель
-              .works__card-desc Этот код выдержит любые испытания
-              buttons
-                button править
-                button удалить
-//         .comments__card 3
-              .comments__card-pic
-//             img(src="../../images/content/").comments__card-avatar
+                h5.works__card-title Сайт школы образования
+                .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              a(href="#").works__card-link http://loftschool.ru
+              править
+              удалить
+//         .works__card 3
+              .works__card-pic
+//             img(src="../../images/content/").works__card-avatar
               .works__card-info
-                .comments__name Владимир Сабанцев
-                .comments__position.text Преподаватель
-              .works__card-desc Этот код выдержит любые испытания
-              buttons
-                button править
-                button удалить
-//         .comments__card 4
-              .comments__card-pic
-//             img(src="../../images/content/").comments__card-avatar
+                h5.works__card-title Сайт школы образования
+                .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              a(href="#").works__card-link http://loftschool.ru
+              править
+              удалить
+//         .works__card 4
+              .works__card-pic
+//             img(src="../../images/content/").works__card-avatar
               .works__card-info
-                .comments__name Владимир Сабанцев
-                .comments__position.text Преподаватель
-              .works__card-desc Этот код выдержит любые испытания
-              buttons
-                button править
-                button удалить
-//         .comments__card 5
-              .comments__card-pic
-//             img(src="../../images/content/").comments__card-avatar
+                h5.works__card-title Сайт школы образования
+                .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              a(href="#").works__card-link http://loftschool.ru
+              править
+              удалить
+//         .works__card 5
+              .works__card-pic
+//             img(src="../../images/content/").works__card-avatar
               .works__card-info
-                .comments__name Владимир Сабанцев
-                .comments__position.text Преподаватель
-              .works__card-desc Этот код выдержит любые испытания
-              buttons
-                button править
-                button удалить
+                h5.works__card-title Сайт школы образования
+                .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              a(href="#").works__card-link http://loftschool.ru
+              править
+              удалить
       
     
 // </template>
