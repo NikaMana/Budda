@@ -5,7 +5,7 @@
       .user__pic
         img(src="../../images/content/mini.png").user__pic-avatar
       .user__name Вероника Маникина            
-     .header__title Панель администрирования
+/     .header__title Панель администрирования
       .header__btn Выйти
     nav.nav
       ul.nav-list
