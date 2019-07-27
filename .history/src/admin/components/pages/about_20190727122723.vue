@@ -1,7 +1,6 @@
 <template lang="pug">
-  section 
-    h1 Обо мне
-    button(type="button" @click="login") Отправить
+  h1 Обо мне
+  button(type="button") Отправить
 
 </template>
 

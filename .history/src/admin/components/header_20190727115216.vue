@@ -2,18 +2,18 @@
 header.header
   .header__user
     .user__pic
-      img(src="../../images/content/mini.png").user__pic-avatar
+      img(src="../images/content/mini.png").user__pic-avatar
     .user__name Вероника Маникина            
     .header__title Панель администрирования
     .header__btn Выйти
   nav.nav
     ul.nav-list
       li.nav-item
-        router-link(to="/") Обо мне
+        a.nav-link Обо мне
       li.nav-item
-        router-link(to="/works") Работы
+        a.nav-link Работы
       li.nav-item
-        router-link(to="/comments") Отзывы 
+        a.nav-link Отзывы
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template lang="pug">
 .main-wrapper 
   my-header
-  router-view
+  works
 
     
       
@@ -12,13 +12,11 @@
 
 import MyHeader from "@/components/header"
 import works from "@/components/pages/works"
-import comments from "@/components/pages/comments"
 
 export default {
  components: {
    MyHeader,
-   works,
-   comments
+   works
  }
 }
 </script>

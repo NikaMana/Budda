@@ -1,7 +1,7 @@
 export default [
   {
     path: "/",
-    component: () => import("@/components/pages/about.vue"),
+    component: () => import("@/components/pages/About.vue"),
     meta: {
       title: "Блок «Обо мне»"
     }
@@ -18,6 +18,13 @@ export default [
     component: () => import("@/components/pages/comments.vue"),
     meta: {
       title: "Блок «Отзывы»"
+    }
+  },
+  {
+    path: "/login",
+    component: () => import("@/components/pages/Login.vue"),
+    meta: {
+      public: true
     }
   }
 ];

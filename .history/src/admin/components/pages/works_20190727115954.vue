@@ -1,5 +1,7 @@
 <template lang="pug">
   
+</template>
+
 section.works
     .works__title Блок "Работы"
     form.works__form
@@ -24,7 +26,7 @@ section.works
         button.works__card-btn Добавить работу
       .works__card 2
         .works__card-pic
-          img(src="../../../images/content/mini.png").works__card-avatar
+          img(src="../images/content/mini.png").works__card-avatar
         .works__card-info
           h5.works__card-title Сайт школы образования
           .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
@@ -33,7 +35,7 @@ section.works
         span удалить
       .works__card 3
         .works__card-pic
-          img(src="../../../images/content/mini.png").works__card-avatar
+          img(src="../images/content/mini.png").works__card-avatar
         .works__card-info
           h5.works__card-title Сайт школы образования
           .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
@@ -42,7 +44,7 @@ section.works
         span удалить
       .works__card 4
         .works__card-pic
-          img(src="../../../images/content/mini.png").works__card-avatar
+          img(src="../images/content/mini.png").works__card-avatar
         .works__card-info
           h5.works__card-title Сайт школы образования
           .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
@@ -51,22 +53,10 @@ section.works
         span удалить
       .works__card 5
         .works__card-pic
-          img(src="../../../images/content/mini.png").works__card-avatar
+          img(src="../images/content/mini.png").works__card-avatar
         .works__card-info
           h5.works__card-title Сайт школы образования
           .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
         a(href="#").works__card-link http:oftschool.ru
         span править
         span удалить
-</template>
-
-<script>
-export default {
-  
-}
-</script>
-
-<style lang="postcss">
-
-</style>
-

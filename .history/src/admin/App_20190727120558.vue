@@ -1,7 +1,7 @@
 <template lang="pug">
 .main-wrapper 
   my-header
-  router-view
+  works
 
     
       

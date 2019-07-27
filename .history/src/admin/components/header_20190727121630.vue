@@ -10,10 +10,12 @@ header.header
     ul.nav-list
       li.nav-item
         router-link(to="/") Обо мне
+    router-link(to="/works") Работы
+router-link(to="/comments") Отзывы Обо мне
       li.nav-item
-        router-link(to="/works") Работы
+        a.nav-link Работы
       li.nav-item
-        router-link(to="/comments") Отзывы 
+        a.nav-link Отзывы
 </template>
 
 <script>
