@@ -8,7 +8,6 @@
     button(type="button" @click="createSkill") Создание скилла
     input(type="text" placeholder="Новый скилл" v-model="newskill")
     h3(v-for="cat in skills") {{ cat.title }}
-    button(type="button" @click="deleteSkill") Удаление скилла
 
 </template>
 
@@ -34,13 +33,8 @@ export default {
     },
     async fetchSkills() {
       const { data } = await $axios.get("/skills/145")
+      
       this.skills = data
-    },
-    deleteSkill() {
-      $axios.post("/skills", { title: this.newskill, percent: 55,  category: 948 })
-    },
-    async deleteSkill() {
-      const { data } = await $axios.delete("/skills/2585")
     }
   },
   data() {

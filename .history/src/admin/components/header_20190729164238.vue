@@ -64,10 +64,10 @@ export default {
 }
 .nav-list{
   display: flex;
+  flex-wrap: wrap;
 
 }
 .nav-item{
-  display: inline-block;
   vertical-align: middle;
   color: #414c63;
   text-decoration: none;

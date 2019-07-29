@@ -5,7 +5,7 @@ header.header
       img(src="../../images/content/mini.png").user__pic-avatar
     .user__name Вероника Маникина            
     .header__title Панель администрирования
-    .header__btn Выйти
+  .header__btn Выйти
   nav.nav
     ul.nav-list
       li.nav-item
@@ -44,29 +44,6 @@ export default {
   border-bottom: 3px solid transparent;
 }
 .header__title{
-  display: inline-block;
-  vertical-align: middle;
-  color: #414c63;
-  text-decoration: none;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 30px;
-  border-bottom: 3px solid transparent;
-}
-
-.header__btn{
-  display: flex;
-  align-items: center;
-  padding-top: 4.3rem;
-  padding-right: 1.375rem;
-}
-.nav-list{
-  display: flex;
-
-}
-.nav-item{
   display: inline-block;
   vertical-align: middle;
   color: #414c63;

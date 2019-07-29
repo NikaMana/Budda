@@ -70,7 +70,7 @@ export default {
   display: inline-block;
   vertical-align: middle;
   color: #414c63;
-  text-decoration: none;
+  
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;

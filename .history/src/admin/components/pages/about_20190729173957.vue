@@ -39,7 +39,7 @@ export default {
     deleteSkill() {
       $axios.post("/skills", { title: this.newskill, percent: 55,  category: 948 })
     },
-    async deleteSkill() {
+    async deleteSkills() {
       const { data } = await $axios.delete("/skills/2585")
     }
   },
@@ -54,6 +54,7 @@ export default {
   created() {
     this.fetchCategories()
     this.fetchSkills()
+    this.deleteSkills()
   }
 }
 

@@ -24,7 +24,7 @@ export default {
 
 <style lang="postcss">
 .header__user{
-  display:inline-flex;
+  display: flex;
   padding: 15px 60px;
 }
 .user__pic-avatar{
@@ -38,41 +38,6 @@ export default {
   text-decoration: none;
   font-family: "Open Sans";
   font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 30px;
-  border-bottom: 3px solid transparent;
-}
-.header__title{
-  display: inline-block;
-  vertical-align: middle;
-  color: #414c63;
-  text-decoration: none;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 30px;
-  border-bottom: 3px solid transparent;
-}
-
-.header__btn{
-  display: flex;
-  align-items: center;
-  padding-top: 4.3rem;
-  padding-right: 1.375rem;
-}
-.nav-list{
-  display: flex;
-
-}
-.nav-item{
-  display: inline-block;
-  vertical-align: middle;
-  color: #414c63;
-  text-decoration: none;
-  font-family: "Open Sans";
-  font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: 30px;

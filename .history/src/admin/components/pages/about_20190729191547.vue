@@ -9,6 +9,7 @@
     input(type="text" placeholder="Новый скилл" v-model="newskill")
     h3(v-for="cat in skills") {{ cat.title }}
     button(type="button" @click="deleteSkill") Удаление скилла
+    {{cat.deleteSkill()}}
 
 </template>
 

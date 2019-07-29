@@ -7,8 +7,7 @@
     h3(v-for="cat in categories") {{ cat.category }}
     button(type="button" @click="createSkill") Создание скилла
     input(type="text" placeholder="Новый скилл" v-model="newskill")
-    h3(v-for="cat in skills") {{ cat.title }}
-    button(type="button" @click="deleteSkill") Удаление скилла
+    h3(v-for="cat in skills") {{ cat.skill }}
 
 </template>
 
@@ -29,31 +28,24 @@ export default {
       const { data } = await $axios.get("/categories")
       this.categories = data
     },
-    createSkill() {
-      $axios.post("/skills", { title: this.newskill, percent: 55,  category: 948 })
-    },
-    async fetchSkills() {
-      const { data } = await $axios.get("/skills/145")
-      this.skills = data
-    },
-    deleteSkill() {
-      $axios.post("/skills", { title: this.newskill, percent: 55,  category: 948 })
-    },
-    async deleteSkill() {
-      const { data } = await $axios.delete("/skills/2585")
-    }
+    // createSkill() {
+    //   $axios.post("skills", { title: this.newskill, percent: 55,  category: 948 })
+    // },
+    // async fetchSkills() {
+    //   const { data } = await $axios.get("/skills")
+    //   this.skills = data
   },
   data() {
     return{
       newcategory: '',
       categories: [],
-      newskill: '',
-      skills: []
+      // newskill: '',
+      // skills: []
     }
   },
   created() {
     this.fetchCategories()
-    this.fetchSkills()
+    // this.fetchSkills()
   }
 }
 

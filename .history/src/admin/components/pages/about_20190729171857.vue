@@ -35,12 +35,8 @@ export default {
     async fetchSkills() {
       const { data } = await $axios.get("/skills/145")
       this.skills = data
-    },
-    deleteSkill() {
-      $axios.post("/skills", { title: this.newskill, percent: 55,  category: 948 })
-    },
-    async deleteSkill() {
-      const { data } = await $axios.delete("/skills/2585")
+      const { data } = await $axios.delete("/skills/145")
+      this.skills = data
     }
   },
   data() {

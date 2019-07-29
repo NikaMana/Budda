@@ -55,6 +55,9 @@ export default {
     this.fetchCategories()
     this.fetchSkills()
   }
+  deleted() {
+    this.deleteSkills()
+  }
 }
 
 </script>
