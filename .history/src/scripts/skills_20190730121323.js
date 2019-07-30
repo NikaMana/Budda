@@ -63,9 +63,9 @@ new Vue({
       ]
     }
   },
-  // async created() {
-  //   let userId = 
-  // },
+  async created() {
+    let userId = 
+  },
   components: {
     skillsRow
   }

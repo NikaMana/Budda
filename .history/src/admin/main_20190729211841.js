@@ -9,6 +9,6 @@ import store from './store'
 new Vue({
   el: "#app-root",
   router,
-  store,
+  // store,
   render: h => h(App)
 });

@@ -13,9 +13,9 @@
         ul.skill-list
           li.skill-list__item
             button(type="button" @click="login") Отправить
-            button(type="button" @click="createCategory(newcategory)") Создание категории
+            button(type="button" @click="createCategory") Создание категории
             input(type="text" placeholder="Новая категория" v-model="newcategory")
-            h3(v-for="cat in categories") {{ cat.category }}
+            //- h3(v-for="cat in categories") {{ cat.category }}
             button(type="button" @click="createSkill(newskill)") Создание скилла
             input(type="text" placeholder="Новый скилл" v-model="newskill")
             //- h3(v-for="cat in skills") {{ cat.title }}    
@@ -62,6 +62,7 @@ export default {
    })
   }
 }
+
 </script>
 
 
