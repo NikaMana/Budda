@@ -28,43 +28,43 @@
       .comments__card 
         .comments__card-pic
           img(src="../../../images/content/vue/Авто.png").comments__card-avatar
-        .comments__card-info
+        .works__card-info
           .comments__name Владимир Сабанцев
           .comments__position.text Преподаватель
-        .comments__card-desc Этот код выдержит любые испытания
-        .comments__card__buttons
-          button.comments__card-correct Править
-          button.comments__card-delete Удалить
+        .works__card-desc Этот код выдержит любые испытания
+        .works__card__buttons
+          button.works__card-correct Править
+          button.works__card-delete Удалить
       .comments__card 
         .comments__card-pic
           img(src="../../../images/content/vue/Карандаши.png").comments__card-avatar
-        .comments__card-info
+        .works__card-info
           .comments__name Владимир Сабанцев
           .comments__position.text Преподаватель
-        .comments__card-desc Этот код выдержит любые испытания
-        .comments__card__buttons
-          button.comments__card-correct Править
-          button.comments__card-delete Удалить
+        .works__card-desc Этот код выдержит любые испытания
+        .works__card__buttons
+          button.works__card-correct Править
+          button.works__card-delete Удалить
       .comments__card 
         .comments__card-pic
           img(src="../../../images/content/vue/Монета.png").comments__card-avatar
-        .comments__card-info
+        .works__card-info
           .comments__name Владимир Сабанцев
           .comments__position.text Преподаватель
-        .comments__card-desc Этот код выдержит любые испытания
-        .comments__card__buttons
-          button.comments__card-correct Править
-          button.comments__card-delete Удалить
+        .works__card-desc Этот код выдержит любые испытания
+        .works__card__buttons
+          button.works__card-correct Править
+          button.works__card-delete Удалить
       .comments__card 
         .comments__card-pic
           img(src="../../../images/content/vue/Инструмент.png").comments__card-avatar
-        .comments__card-info
+        .works__card-info
           .comments__name Владимир Сабанцев
           .comments__position.text Преподаватель
-        .comments__card-desc Этот код выдержит любые испытания
-        .comments__card__buttons
-          button.comments__card-correct Править
-          button.comments__card-delete Удалить
+        .works__card-desc Этот код выдержит любые испытания
+        .works__card__buttons
+          button.works__card-correct Править
+          button.works__card-delete Удалить
 </template>
 <script>
 export default {
@@ -92,92 +92,80 @@ export default {
     font-weight: 600;
     color: #414c63;
   }
-.comments__cards {
-    width: 336px;
-    margin: 60px;
+.works__cards {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
   }
-.comments__card {
-  background: #fff;
-  width: 336px;
-  height: 556px;
-}
-.comments__card-avatar{
-  width: 100%;
-}
-.comments__card-main{
-  background: #3f35cb;
-}
-.comments__card-btn{
-  color: #fff;
-  background: none;
-  border: none;
-  font-size: 16px;
-  font-weight: 400;
-}
-.comments__card-info{
-  margin: 30px;
-}
-.comments__card-title{
-  margin-bottom: 2.5rem;
-}
-.comments__card-desc{
-  font-weight: 600;
-  font-size: 1rem;
-  color: rgba(65,76,99,.7);
-  line-height: 1.875rem;
-}
-.comments__card-correct, .comments__card-delete{
-  width: 68px;
-  height: 16px;
-  opacity: 0.5;
-  color: #414c63;
-  font-family: "Open Sans - Semibold";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  background: none;
-  border: none;
-  }
-
-.form__header {
-  height: 75px;
-  width: 100%;
-  border-bottom: 2px solid #1f232d;
-}
-
-.form__body {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-}
-.form__photoadd-btn{
-  background: none;
-  border: none;
-  font-size: 16px;
-  font-weight: 700;
-  color: #383bcf;
-}
-.form__photo {
-  width: 49%;
-}
-.form__data-name{
-  display: flex;
-}
-.form-info{
-  margin-right: 50px;
-}
-.form__data {
-  width: 49%;
-
-  input {
+  .works__card {
+    background: #fff;
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #000;
+    height: 556px;
   }
+  .works__card-avatar{
+    width: 100%;
+  }
+  .works__card-main{
+    background: #3f35cb;
+  }
+  .works__card-btn{
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .works__card-info{
+    margin: 30px;
+  }
+  .works__card-title{
+    margin-bottom: 2.5rem;
+  }
+  .works__card-desc{
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(65,76,99,.7);
+    line-height: 1.875rem;
+  }
+
+  
+  .form__header {
+    height: 75px;
+    width: 100%;
+    border-bottom: 2px solid #1f232d;
+  }
+
+  .form__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  .form__photoadd-btn{
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #383bcf;
+  }
+  .form__photo {
+    width: 49%;
+  }
+  .form__data-name{
+    display: flex;
+  }
+  .form-info{
+    margin-right: 50px;
+  }
+  .form__data {
+    width: 49%;
+
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #000;
+    }
 
  label {
    margin-bottom: 30px;

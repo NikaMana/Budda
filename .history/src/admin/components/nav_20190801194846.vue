@@ -18,11 +18,20 @@ export default {
   display: inline-flex;
 }
 .nav-item{
-  margin: 0.875rem;
+  /* margin: 0.875rem;
   white-space: nowrap;
   display: inline-block;
   vertical-align: middle;
-  border: none;
+  border: none; */
+  height: 100%;
+  margin-right: 30px;
+  /* @include phones {
+    margin-right: 3px;
+  } */
+  &:last-child {
+    margin-right: 0;
+  }
+}
 }
 .nav-menu{
   vertical-align: middle;

@@ -166,12 +166,6 @@ export default {
     margin-bottom: 12px;
   }
 }
-.about__title {
-    margin: 60px;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #414c63;
-  }
 .about__cards {
   width: 100%;
   display: grid;

@@ -94,7 +94,6 @@ export default {
   }
 .comments__cards {
     width: 336px;
-    margin: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;

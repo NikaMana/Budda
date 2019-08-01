@@ -93,8 +93,7 @@ export default {
     color: #414c63;
   }
 .comments__cards {
-    width: 336px;
-    margin: 60px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;

@@ -101,8 +101,7 @@ export default {
     color: #414c63;
   }
   .works__cards {
-    width: 336px;
-    margin: 60px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
@@ -110,7 +109,7 @@ export default {
   }
   .works__card {
     background: #fff;
-    width: 336px;
+    width: 100%;
     height: 556px;
   }
   .works__card-avatar{

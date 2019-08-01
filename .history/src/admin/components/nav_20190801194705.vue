@@ -25,7 +25,17 @@ export default {
   border: none;
 }
 .nav-menu{
-  vertical-align: middle;
+  /* display: inline-block;
+    vertical-align: middle;
+    color: #414c63;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.875rem;
+    border-bottom: 3px solid transparent; */
+    vertical-align: middle;
   white-space: nowrap;
   display: flex;
   height: 100%;

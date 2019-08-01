@@ -1,7 +1,7 @@
 <template lang="pug">
   .about-page-container
     .about-page__title
-      .about-title Блок "Обо мне"
+      .page-title Блок "Обо мне"
       button.about-page__add-new(
         @click="showAddingForm = true"
         v-if="showAddingForm === false"
@@ -166,12 +166,6 @@ export default {
     margin-bottom: 12px;
   }
 }
-.about__title {
-    margin: 60px;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #414c63;
-  }
 .about__cards {
   width: 100%;
   display: grid;

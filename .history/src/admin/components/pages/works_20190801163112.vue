@@ -95,14 +95,13 @@ export default {
     margin-bottom: 80px;
   }
   .works__title {
-    margin: 60px;
+    margin-bottom: 60px;
     font-size: 1.125rem;
     font-weight: 600;
     color: #414c63;
   }
   .works__cards {
-    width: 336px;
-    margin: 60px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
@@ -110,7 +109,7 @@ export default {
   }
   .works__card {
     background: #fff;
-    width: 336px;
+    width: 100%;
     height: 556px;
   }
   .works__card-avatar{
@@ -184,7 +183,7 @@ export default {
     height: 50px;
     border-radius: 25px;
     background-color: #ffffff;
-    margin-left: 9.75rem;
+    margin-left: 220px;
     background-image: linear-gradient(to right, #006aed 0%, #3f35cb 100%);
   }
   .form__photo-text{
@@ -196,7 +195,7 @@ export default {
     font-size: 16px;
     font-weight: 400;
     line-height: 33.89px;
-    margin: 3.25rem 8.625rem;
+    margin: 3.25rem 13.625rem;
   }
   .form__data {
     width: 49%;
@@ -214,6 +213,7 @@ export default {
    display: block;
    }
  .form__label-text{
+   width: 77px;
     height: 12px;
     opacity: 0.5;
     color: #414c63;

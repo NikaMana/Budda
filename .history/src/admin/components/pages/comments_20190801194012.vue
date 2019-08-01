@@ -93,55 +93,43 @@ export default {
     color: #414c63;
   }
 .comments__cards {
-    width: 336px;
-    margin: 60px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
   }
-.comments__card {
+.works__card {
   background: #fff;
-  width: 336px;
+  width: 100%;
   height: 556px;
 }
-.comments__card-avatar{
+.works__card-avatar{
   width: 100%;
 }
-.comments__card-main{
+.works__card-main{
   background: #3f35cb;
 }
-.comments__card-btn{
+.works__card-btn{
   color: #fff;
   background: none;
   border: none;
   font-size: 16px;
   font-weight: 400;
 }
-.comments__card-info{
+.works__card-info{
   margin: 30px;
 }
-.comments__card-title{
+.works__card-title{
   margin-bottom: 2.5rem;
 }
-.comments__card-desc{
+.works__card-desc{
   font-weight: 600;
   font-size: 1rem;
   color: rgba(65,76,99,.7);
   line-height: 1.875rem;
 }
-.comments__card-correct, .comments__card-delete{
-  width: 68px;
-  height: 16px;
-  opacity: 0.5;
-  color: #414c63;
-  font-family: "Open Sans - Semibold";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  background: none;
-  border: none;
-  }
+
 
 .form__header {
   height: 75px;

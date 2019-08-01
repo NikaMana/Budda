@@ -93,8 +93,7 @@ export default {
     color: #414c63;
   }
 .comments__cards {
-    width: 336px;
-    margin: 60px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
@@ -102,7 +101,7 @@ export default {
   }
 .comments__card {
   background: #fff;
-  width: 336px;
+  width: 100%;
   height: 556px;
 }
 .comments__card-avatar{
@@ -130,18 +129,7 @@ export default {
   color: rgba(65,76,99,.7);
   line-height: 1.875rem;
 }
-.comments__card-correct, .comments__card-delete{
-  width: 68px;
-  height: 16px;
-  opacity: 0.5;
-  color: #414c63;
-  font-family: "Open Sans - Semibold";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  background: none;
-  border: none;
-  }
+
 
 .form__header {
   height: 75px;
