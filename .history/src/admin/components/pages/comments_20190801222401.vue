@@ -23,7 +23,7 @@
               button.form__label-save Сохранить
     .comments__cards
       .comments__card-main 
-        img.comments__card-picname(src="../../../images/content/vue/+.png")
+        img.comments__card-pic(src="../../../images/content/vue/+.png")
         button.comments__card-btn Добавить отзыв
       .comments__card 
         .comments__card-pic
@@ -102,23 +102,20 @@ export default {
   margin: 60px;
   margin-bottom: 80px;
 }
-.commentsform__photo-add{
-  width: 20%;
-}
 .comments__title {
-  margin: 3.75rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #414c63;
-}
+    margin: 3.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #414c63;
+  }
 .comments__cards {
-  width: 336px;
-  margin: 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-}
+    width: 336px;
+    margin: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
 .comments__card {
   background: #fff;
   width: 336px;
@@ -129,9 +126,10 @@ export default {
 }
 .comments__card-main{
   background: #3f35cb;
+  display: grid;
 }
-.comments__card-picname{
-  margin: 5.8125rem;
+.comments__card-pic{
+  
 }
 .comments__card-btn{
   color: #fff;
@@ -139,7 +137,6 @@ export default {
   border: none;
   font-size: 16px;
   font-weight: 400;
-  margin-left: 100px;
 }
 .comments__card-info{
   margin: 30px;
@@ -183,7 +180,6 @@ export default {
   font-size: 16px;
   font-weight: 700;
   color: #383bcf;
-  margin-left: 95px;
 }
 .form__photo {
   width: 49%;

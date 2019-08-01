@@ -38,11 +38,11 @@ section.works
           h4.works__card-title Сайт школы образования
           .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
           a(href="#").works__card-link http:loftschool.ru
-          .works__card-buttons
+          .works__card__buttons
             button.works__card-correct Править
-            img(src="../../../images/content/vue/pencil-edit-button.png").works__card-imgpen
+            img(src="../../../images/content/vue/pencil-edit-button.png").comments__card-imgpen
             button.works__card-delete Удалить
-            img(src="../../../images/content/vue/cancel.png").works__card-img
+            img(src="../../../images/content/vue/cancel.png").comments__card-img
       .works__card
         .works__card-pic
           img(src="../../../images/content/vue/Карандаши.png").works__card-avatar
@@ -50,11 +50,11 @@ section.works
           h4.works__card-title Сайт школы образования
           .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
           a(href="#").works__card-link http:loftschool.ru
-          .works__card-buttons
+          .works__card__buttons
             button.works__card-correct Править
-            img(src="../../../images/content/vue/pencil-edit-button.png").works__card-imgpen
+            img(src="../../../images/content/vue/pencil-edit-button.png").comments__card-imgpen
             button.works__card-delete Удалить
-            img(src="../../../images/content/vue/cancel.png").works__card-img
+            img(src="../../../images/content/vue/cancel.png").comments__card-img
       .works__card
         .works__card-pic
           img(src="../../../images/content/vue/Монета.png").works__card-avatar
@@ -62,11 +62,11 @@ section.works
           h4.works__card-title Сайт школы образования
           .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
           a(href="#").works__card-link http:loftschool.ru
-          .works__card-buttons
+          .works__card__buttons
             button.works__card-correct Править
-            img(src="../../../images/content/vue/pencil-edit-button.png").works__card-imgpen
+            img(src="../../../images/content/vue/pencil-edit-button.png").comments__card-imgpen
             button.works__card-delete Удалить
-            img(src="../../../images/content/vue/cancel.png").works__card-img
+            img(src="../../../images/content/vue/cancel.png").comments__card-img
       .works__card
         .works__card-pic
           img(src="../../../images/content/vue/Инструмент.png").works__card-avatar
@@ -74,11 +74,11 @@ section.works
           h4.works__card-title Сайт школы образования
           .works__card-desc Эта девушка проходила обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
           a(href="#").works__card-link http:loftschool.ru
-          .works__card-buttons
+          .works__card__buttons
             button.works__card-correct Править
-            img(src="../../../images/content/vue/pencil-edit-button.png").works__card-imgpen
+            img(src="../../../images/content/vue/pencil-edit-button.png").comments__card-imgpen
             button.works__card-delete Удалить
-            img(src="../../../images/content/vue/cancel.png").works__card-img
+            img(src="../../../images/content/vue/cancel.png").comments__card-img
 </template>
 
 <script>
@@ -129,9 +129,6 @@ export default {
   }
   .works__card-picname{
     margin: 5.8125rem;
-}
-.works__card-buttons{
-  margin-top: 80px;
 }
   .works__card-btn{
     color: #fff;
@@ -307,8 +304,5 @@ export default {
     background: none;
     border: none;
   }
-  .works__card-imgpen{
-  margin-right: 5.5rem;
-}
 </style>
 

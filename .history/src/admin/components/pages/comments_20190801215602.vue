@@ -23,7 +23,7 @@
               button.form__label-save Сохранить
     .comments__cards
       .comments__card-main 
-        img.comments__card-picname(src="../../../images/content/vue/+.png")
+        img.comments__card-pic(src="../../../images/content/vue/+.png")
         button.comments__card-btn Добавить отзыв
       .comments__card 
         .comments__card-pic
@@ -31,56 +31,42 @@
         .comments__about
           img.comments__photo(src="../../../images/content/photo0.png")
           .comments__info
-              .comments__name Владимир Сабанцев
-              .comments__position.text Преподаватель
-        .comments__card-desc Этот код выдержит любые испытания. Только пожалуйста, не загружайте его на старых компьютерах!
+              .comments__name {{ item.name }}
+              .comments__position.text
+        .comments__card-desc Этот код выдержит любые испытания
         .comments__card__buttons
           button.comments__card-correct Править
-          img(src="../../../images/content/vue/pencil-edit-button.png").comments__card-imgpen
           button.comments__card-delete Удалить
-          img(src="../../../images/content/vue/cancel.png").comments__card-img
       .comments__card 
         .comments__card-pic
           img(src="../../../images/content/vue/Карандаши.png").comments__card-avatar
-        .comments__about
-          img.comments__photo(src="../../../images/content/photo1.png")
-          .comments__info
-            .comments__name Владимир Сабанцев
-            .comments__position.text Преподаватель
-        .comments__card-desc Этот код выдержит любые испытания. Только пожалуйста, не загружайте его на старых компьютерах!
+        .comments__card-info
+          .comments__name Владимир Сабанцев
+          .comments__position.text Преподаватель
+        .comments__card-desc Этот код выдержит любые испытания
         .comments__card__buttons
           button.comments__card-correct Править
-          img(src="../../../images/content/vue/pencil-edit-button.png").comments__card-imgpen
           button.comments__card-delete Удалить
-          img(src="../../../images/content/vue/cancel.png").comments__card-img
       .comments__card 
         .comments__card-pic
           img(src="../../../images/content/vue/Монета.png").comments__card-avatar
-        .comments__about
-          img.comments__photo(src="../../../images/content/photo0.png")
-          .comments__info
-            .comments__name Владимир Сабанцев
-            .comments__position.text Преподаватель
-        .comments__card-desc Этот код выдержит любые испытания. Только пожалуйста, не загружайте его на старых компьютерах!
+        .comments__card-info
+          .comments__name Владимир Сабанцев
+          .comments__position.text Преподаватель
+        .comments__card-desc Этот код выдержит любые испытания
         .comments__card__buttons
           button.comments__card-correct Править
-          img(src="../../../images/content/vue/pencil-edit-button.png").comments__card-imgpen
           button.comments__card-delete Удалить
-          img(src="../../../images/content/vue/cancel.png").comments__card-img
       .comments__card 
         .comments__card-pic
           img(src="../../../images/content/vue/Инструмент.png").comments__card-avatar
-        .comments__about
-          img.comments__photo(src="../../../images/content/photo1.png")
-          .comments__info
-            .comments__name Владимир Сабанцев
-            .comments__position.text Преподаватель
-        .comments__card-desc Этот код выдержит любые испытания. Только пожалуйста, не загружайте его на старых компьютерах!
+        .comments__card-info
+          .comments__name Владимир Сабанцев
+          .comments__position.text Преподаватель
+        .comments__card-desc Этот код выдержит любые испытания
         .comments__card__buttons
           button.comments__card-correct Править
-          img(src="../../../images/content/vue/pencil-edit-button.png").comments__card-imgpen
           button.comments__card-delete Удалить
-          img(src="../../../images/content/vue/cancel.png").comments__card-img
 </template>
 <script>
 export default {
@@ -102,23 +88,20 @@ export default {
   margin: 60px;
   margin-bottom: 80px;
 }
-.commentsform__photo-add{
-  width: 20%;
-}
 .comments__title {
-  margin: 3.75rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #414c63;
-}
+    margin: 3.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #414c63;
+  }
 .comments__cards {
-  width: 336px;
-  margin: 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-}
+    width: 336px;
+    margin: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
 .comments__card {
   background: #fff;
   width: 336px;
@@ -130,16 +113,12 @@ export default {
 .comments__card-main{
   background: #3f35cb;
 }
-.comments__card-picname{
-  margin: 5.8125rem;
-}
 .comments__card-btn{
   color: #fff;
   background: none;
   border: none;
   font-size: 16px;
   font-weight: 400;
-  margin-left: 100px;
 }
 .comments__card-info{
   margin: 30px;
@@ -183,7 +162,6 @@ export default {
   font-size: 16px;
   font-weight: 700;
   color: #383bcf;
-  margin-left: 95px;
 }
 .form__photo {
   width: 49%;
@@ -208,40 +186,6 @@ export default {
    display: block;
    }
  }
- .comments__about{
-  display: flex;
-  align-items: center;
-}
-.comments__name{
-  font-size: 1.125rem;
-  color: #414c63;
-  font-weight: 700;
-  white-space: nowrap;
-  margin-bottom: 0.1875rem;
-}
-.comments__position{
-  font-weight: 600;
-  color: rgba(65,76,99,0.3);
-  font-size: 0.875rem;
-}
-.comments__photo{
-  display: inline-block;
-  align-items: flex-start;
-  flex: 0;
-  border-radius: 50%;
-  margin: 15px;
-  width: 3.125rem;
-  height: 3.125rem;
-}
-.comments__card-desc{
-  margin: 25px;
-}
-.comments__card__buttons{
-  margin: 15px;
-}
-.comments__card-imgpen{
-  margin-right: 120px;
-}
 </style>
 
 

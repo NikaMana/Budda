@@ -23,7 +23,7 @@
               button.form__label-save Сохранить
     .comments__cards
       .comments__card-main 
-        img.comments__card-picname(src="../../../images/content/vue/+.png")
+        img.comments__card-pic-name(src="../../../images/content/vue/+.png")
         button.comments__card-btn Добавить отзыв
       .comments__card 
         .comments__card-pic
@@ -130,7 +130,7 @@ export default {
 .comments__card-main{
   background: #3f35cb;
 }
-.comments__card-picname{
+.comments__card-pic-name{
   margin: 5.8125rem;
 }
 .comments__card-btn{
