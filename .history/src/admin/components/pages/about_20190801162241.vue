@@ -1,57 +1,35 @@
 <template lang="pug">
   .about-page-container
-    .about-page__title
-      h1.page-title Обо мне
-      button.about-page__add-new(
-        @click="showAddingForm = true"
-        v-if="showAddingForm === false"
-      ) Добавить группу
+    .container
+      .about-page__title
+        h1.page-title Обо мне
+        button.about-page__add-new(
+          @click="showAddingForm = true"
+          v-if="showAddingForm === false"
+        ) Добавить группу
     .about__cards
-      .about__card
-        .about-page__content
-          .container.container--mobile-wide
-            ul.skill-list
-              li.skill-list__item
-                button(type="button" @click="login") Отправить
-                button(type="button" @click="createCategory(newcategory)") Создание категории
-                input(type="text" required placeholder="Новая категория" v-model="newcategory")
-                //- h3(v-for="cat in categories") {{ cat.category }}
-                p(v-for="category in categoriesForEdit")
-                  span {{ category.category }}
-                  input(type="text" required placeholder="Новая категория" v-model="category.category")
-                  button(type="button" @click="deleteCategory(category.id)") Удаление категории
-                  button(type="button" @click="updateCategory({ title: category.category, id: category.id })") Обновить категорию 
-                  span {{ category.id }}
-                button(type="button" @click="createSkill(newskill)") Создание скилла
-                input(type="text" required placeholder="Новый скилл" v-model="newskill")
-                //- h3(v-for="cat in skills") {{ cat.title }}    
-                p(v-for="skill in skills")
-                  span {{ skill.title }}
-                  button(type="button" required @click="deleteSkill(skill.id)") Удаление скилла
-                  span {{ skill.id }}
-      .about__card
-        .about-page__content
-          .container.container--mobile-wide
-            ul.skill-list
-              li.skill-list__item
-                button(type="button" @click="login") Отправить
-                button(type="button" @click="createCategory(newcategory)") Создание категории
-                input(type="text" required placeholder="Новая категория" v-model="newcategory")
-                //- h3(v-for="cat in categories") {{ cat.category }}
-                p(v-for="category in categoriesForEdit")
-                  span {{ category.category }}
-                  input(type="text" required placeholder="Новая категория" v-model="category.category")
-                  button(type="button" @click="deleteCategory(category.id)") Удаление категории
-                  button(type="button" @click="updateCategory({ title: category.category, id: category.id })") Обновить категорию 
-                  span {{ category.id }}
-                button(type="button" @click="createSkill(newskill)") Создание скилла
-                input(type="text" required placeholder="Новый скилл" v-model="newskill")
-                //- h3(v-for="cat in skills") {{ cat.title }}    
-                p(v-for="skill in skills")
-                  span {{ skill.title }}
-                  button(type="button" required @click="deleteSkill(skill.id)") Удаление скилла
-                  span {{ skill.id }}
       
+        .about-page__content
+          .container.container--mobile-wide
+            ul.skill-list
+              li.skill-list__item
+                button(type="button" @click="login") Отправить
+                button(type="button" @click="createCategory(newcategory)") Создание категории
+                input(type="text" required placeholder="Новая категория" v-model="newcategory")
+                //- h3(v-for="cat in categories") {{ cat.category }}
+                p(v-for="category in categoriesForEdit")
+                  span {{ category.category }}
+                  input(type="text" required placeholder="Новая категория" v-model="category.category")
+                  button(type="button" @click="deleteCategory(category.id)") Удаление категории
+                  button(type="button" @click="updateCategory({ title: category.category, id: category.id })") Обновить категорию 
+                  span {{ category.id }}
+                button(type="button" @click="createSkill(newskill)") Создание скилла
+                input(type="text" required placeholder="Новый скилл" v-model="newskill")
+                //- h3(v-for="cat in skills") {{ cat.title }}    
+                p(v-for="skill in skills")
+                  span {{ skill.title }}
+                  button(type="button" required @click="deleteSkill(skill.id)") Удаление скилла
+                  span {{ skill.id }}
 
 
 
@@ -167,16 +145,16 @@ export default {
   }
 }
 .about__cards {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-}
-.about__card {
-  background: #fff;
-  width: 100%;
-  height: 556px;
-}
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .about__card {
+    background: #fff;
+    width: 100%;
+    height: 556px;
+  }
 </style>
 

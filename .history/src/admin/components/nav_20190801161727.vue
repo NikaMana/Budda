@@ -4,9 +4,9 @@ nav.nav
     li.nav-item
       router-link.nav-menu(to="/") Обо мне
     li.nav-item
-      router-link.nav-menu(to="/works") Работы
+      router-link(to="/works") Работы
     li.nav-item
-      router-link.nav-menu(to="/comments") Отзывы 
+      router-link(to="/comments") Отзывы 
 </template>
 <script>
 export default {
@@ -25,16 +25,7 @@ export default {
   border: none;
 }
 .nav-menu{
-  display: inline-block;
-    vertical-align: middle;
-    color: #414c63;
-    text-decoration: none;
-    font-family: Open Sans;
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.875rem;
-    border-bottom: 3px solid transparent;
+  
 }
 </style>
 

@@ -1,5 +1,6 @@
 <template lang="pug">
   .about-page-container
+
     .about-page__title
       h1.page-title Обо мне
       button.about-page__add-new(

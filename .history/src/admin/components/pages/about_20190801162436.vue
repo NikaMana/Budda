@@ -1,11 +1,12 @@
 <template lang="pug">
   .about-page-container
-    .about-page__title
-      h1.page-title Обо мне
-      button.about-page__add-new(
-        @click="showAddingForm = true"
-        v-if="showAddingForm === false"
-      ) Добавить группу
+    .container
+      .about-page__title
+        h1.page-title Обо мне
+        button.about-page__add-new(
+          @click="showAddingForm = true"
+          v-if="showAddingForm === false"
+        ) Добавить группу
     .about__cards
       .about__card
         .about-page__content

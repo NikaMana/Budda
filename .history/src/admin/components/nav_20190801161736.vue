@@ -4,9 +4,9 @@ nav.nav
     li.nav-item
       router-link.nav-menu(to="/") Обо мне
     li.nav-item
-      router-link.nav-menu(to="/works") Работы
+      router-link(to="/works") Работы
     li.nav-item
-      router-link.nav-menu(to="/comments") Отзывы 
+      router-link(to="/comments") Отзывы 
 </template>
 <script>
 export default {

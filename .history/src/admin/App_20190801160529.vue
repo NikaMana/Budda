@@ -12,14 +12,14 @@
 <script>
 
 import MyHeader from "@/components/header"
-import MyNav from "@/components/nav"
+import Mynav from "@/components/nav"
 import works from "@/components/pages/works"
 import comments from "@/components/pages/comments"
 
 export default {
  components: {
    MyHeader,
-   MyNav,
+   Mynav,
    works,
    comments
  }
